@@ -8,7 +8,7 @@
   2. `make iverilog` to make an executable simulation using iverilog (I haven't managed to $display or $monitor my registers with iverilog)
   3. `make yosys` to synthesise using yosys and then simulate using iverilog (again, I haven't managed to $display or $monitor) 
 
-- `required_modules.txt`: a list of all the additional verilog files used in compilation. Make sure that the required_modules.txt points to the correct location for your files.
+- `required_modules.txt`: a list of all the additional verilog files used in compilation. This should work without modification if you have correctly linked `verilog` to the right location (see below).
 
 - `toplevel_sim.cpp`: C++ program that wraps the Verilated module. If you want to interact with your module, put the code in here.
 
