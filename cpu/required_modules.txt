@@ -6,7 +6,6 @@ verilog/branch_decide.v
 verilog/branch_predictor.v
 verilog/control_unit.v
 verilog/cpu.v
-verilog/data.hex
 verilog/dataMem_mask_gen.v
 verilog/data_mem.v
 verilog/forwarding_unit.v
@@ -14,6 +13,5 @@ verilog/imm_gen.v
 verilog/instruction_mem.v
 verilog/mux2to1.v
 verilog/pipeline_registers.v
-verilog/program.hex
 verilog/program_counter.v
 verilog/register_file.v
