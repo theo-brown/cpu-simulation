@@ -1,4 +1,4 @@
-#include <iostream>
+#include <stdio.h>
 #include <verilated.h>
 #include "Vtoplevel_sim.h"
 
@@ -12,11 +12,10 @@ int main(int argc, char** argv, char** env)
 
 	while (!Verilated::gotFinish())
 	{
-		if (vtime % 10 == 1) {
-			clk = not clk;
-			top->clk = int(clk);
-		}
+		clk = not clk;
+		top->clk = int(clk);
 		top->eval();
+		printf("0x%X\n", top->led);
 		vtime++;
 	}
 
